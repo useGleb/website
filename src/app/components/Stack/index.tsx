@@ -1,4 +1,3 @@
-import { Globe, Server, Smartphone } from 'lucide-react';
 import StackSection from './StackSection';
 import StackSectionTechIcon from './StackSection/StackSectionTechIcon';
 
