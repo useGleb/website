@@ -1,3 +1,5 @@
+import SectionHeader from '@/components/ui/SectionHeader';
+
 type LanguagesSectionProps = {
   className?: string;
 };
@@ -20,12 +22,7 @@ const LanguageChip = ({
 const LanguagesSection = ({ className }: LanguagesSectionProps) => {
   return (
     <div className={className}>
-      <div className='mb-16'>
-        <h3 className='font-bold text-5xl text-typography'>LANGUAGES</h3>
-        <div className='text-typography-light'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </div>
-      </div>
+      <SectionHeader title='LANGUAGES' />
       <div className='flex flex-row w-full gap-4  flex-wrap lg:flex-nowrap'>
         <LanguageChip language='ENGLISH' level='Fluent' />
         <LanguageChip language='BULGARIAN' level='Fluent' />

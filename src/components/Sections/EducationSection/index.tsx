@@ -1,3 +1,4 @@
+import SectionHeader from '@/components/ui/SectionHeader';
 import { Calendar } from 'lucide-react';
 
 type EducationSectionProps = {
@@ -18,10 +19,12 @@ const DegreeChip = ({
   yearEnd,
 }: DegreeChipProps) => {
   return (
-    <div className='w-full flex justify-between items-start mb-8 bg-background-light p-6 rounded-xl'>
+    <div className='w-full flex  flex-col lg:flex-row lg:justify-between items-start mb-8 bg-background-light p-6 rounded-xl'>
       <div>
         <div className='text-typography-light mb-4'>{university}</div>
-        <div className='text-2xl font-bold text-typography mb-4'>{degree}</div>
+        <div className='text-xl lg:text-2xl font-bold text-typography mb-4'>
+          {degree}
+        </div>
       </div>
       <div className='flex gap-2 items-center text-typography-light'>
         <Calendar size={18} />
@@ -35,12 +38,7 @@ const EductaionSection = ({ className }: EducationSectionProps) => {
   return (
     <div className={className}>
       <div>
-        <div className='mb-16'>
-          <h3 className='font-bold text-5xl text-typography'>EDUCATION</h3>
-          <div className='text-typography-light'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </div>
-        </div>
+        <SectionHeader title='EDUCATION' />
         <DegreeChip
           university='University of Economics - Varna'
           degree='Mobile and Web technologies'

@@ -9,7 +9,7 @@ const StackDialog = () => {
     <Dialog>
       <DialogTrigger asChild>
         <div className='flex flex-col justify-center gap-12'>
-          <div className='grid grid-cols-2 text-start gap-4'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 text-start gap-4'>
             <div className='w-full flex flex-col gap-4'>
               <TechSkillHorizontal
                 title='JavaScript'
@@ -32,13 +32,13 @@ const StackDialog = () => {
           </div>
         </div>
       </DialogTrigger>
-      <DialogContent className='p-16 w-full max-w-[80vw] h-[80vh] gap-0 border-0'>
+      <DialogContent className='p-4 lg:p-16 w-full max-w-[80vw] h-[80vh] gap-0 border-0'>
         <DialogTitle
-          className='text-typography text-5xl font-bold pb-4'
+          className='text-typography text-2xl lg:text-5xl font-bold pb-4'
           style={{ boxShadow: '0px 24px 10px -10px rgba(0,0,0,0.5)' }}>
           What I use
         </DialogTitle>
-        <div className='grid grid-cols-4 flex-wrap w-full h-full gap-12 overflow-auto p-4 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:transparent [&::-webkit-scrollbar-thumb]:bg-foreground-accent-2 [&::-webkit-scrollbar-thumb]:rounded-xl [&::-webkit-scrollbar-thumb]:opacity-50'>
+        <div className='grid grid-cols-1 lg:grid-cols-4 flex-wrap w-full h-full gap-12 overflow-auto p-4 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:transparent [&::-webkit-scrollbar-thumb]:bg-foreground-accent-2 [&::-webkit-scrollbar-thumb]:rounded-xl [&::-webkit-scrollbar-thumb]:opacity-50'>
           <div className='flex flex-col gap-12'>
             <StackSection title='Core'>
               <TechSkillHorizontal
