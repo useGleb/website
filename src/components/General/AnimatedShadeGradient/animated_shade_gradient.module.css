@@ -1,0 +1,26 @@
+.shade { 
+  position: absolute;
+  top: -15vw;
+  right: -15vw;
+  width: 40vw;
+  height: 40vw;
+  background: linear-gradient(45deg, #0a4f79, #0c7f9a, #36c08d, #6cd672, #a9ea72, #6cd672, #36c08d, #0c7f9a, #0a4f79);
+  background-size: 400%;
+  animation: backgroundMovingAnim 20s linear infinite;
+  opacity: 50%;
+  border-radius: 100%;
+  filter: blur(200px)
+}
+
+
+@keyframes backgroundMovingAnim {
+	0% {
+		background-position: 0 0;
+  }
+	50% {
+		background-position: 300% 300%;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
