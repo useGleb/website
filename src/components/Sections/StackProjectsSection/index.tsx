@@ -22,13 +22,37 @@ const StackProjectsSection = ({ className }: StackProjectsSectionProps) => {
       </div>
       <div className='w-full flex flex-col'>
         <SectionHeader title={t('title2')} />
-        <WorkExperienceBlock projectTranslationKey='FuturistLabs' />
-        <WorkExperienceBlock projectTranslationKey='Regate' />
-        <WorkExperienceBlock projectTranslationKey='Finanztip' />
-        <WorkExperienceBlock projectTranslationKey='Mentessa' />
-        <WorkExperienceBlock projectTranslationKey='Temedica' />
-        <WorkExperienceBlock projectTranslationKey='Feverguard' />
-        <WorkExperienceBlock projectTranslationKey='Comitex' />
+        <WorkExperienceBlock
+          projectTranslationKey='FuturistLabs'
+          icons={['Next', 'Typescript', 'WS', 'Tailwind CSS', 'HTML5', 'Zod']}
+        />
+        <WorkExperienceBlock
+          projectTranslationKey='Regate'
+          icons={[
+            'React',
+            'Typescript',
+            'Storybook',
+            'Cypress',
+            'CSS3',
+            'HTML5',
+          ]}
+        />
+        <WorkExperienceBlock
+          projectTranslationKey='Finanztip'
+          icons={['React', 'Typescript', 'Storybook', 'Jest']}
+        />
+        <WorkExperienceBlock
+          projectTranslationKey='Mentessa'
+          icons={['Vue.js', 'Typescript', 'Nest.js', 'Cypress', 'Storybook']}
+        />
+        <WorkExperienceBlock
+          projectTranslationKey='Temedica'
+          icons={['React', 'Typescript', 'Cypress']}
+        />
+        <WorkExperienceBlock
+          projectTranslationKey='Feverguard'
+          icons={['Next', 'Typescript', 'Selenium']}
+        />
       </div>
     </div>
   );

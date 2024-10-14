@@ -4,10 +4,12 @@ import { useTranslations } from 'next-intl';
 
 type WorkExperienceBlockProps = {
   projectTranslationKey: string;
+  icons: string[];
 };
 
 const WorkExperienceBlock = ({
   projectTranslationKey,
+  icons = [],
 }: WorkExperienceBlockProps) => {
   const t = useTranslations(
     `SectionStackProjects.Projects.${projectTranslationKey}`
@@ -34,11 +36,10 @@ const WorkExperienceBlock = ({
           </div>
         </div>
         <div className='text-typography-light'>{t('content')}</div>
-        <div className='mt-4 flex gap-4'>
-          <TechnologyIcon />
-          <TechnologyIcon />
-          <TechnologyIcon />
-          <TechnologyIcon />
+        <div className='mt-4 flex gap-4 flex-wrap'>
+          {icons.map((iconName) => (
+            <TechnologyIcon key={`tech-icon-${iconName}`} techName={iconName} />
+          ))}
         </div>
       </div>
     </div>
