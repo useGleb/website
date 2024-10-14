@@ -24,13 +24,13 @@ const StackProjectsSection = ({ className }: StackProjectsSectionProps) => {
         <SectionHeader title={t('title2')} />
         <WorkExperienceBlock
           projectTranslationKey='FuturistLabs'
-          icons={['Next', 'Typescript', 'WS', 'Tailwind CSS', 'HTML5', 'Zod']}
+          icons={['Next', 'TypeScript', 'WS', 'Tailwind CSS', 'HTML5', 'Zod']}
         />
         <WorkExperienceBlock
           projectTranslationKey='Regate'
           icons={[
             'React',
-            'Typescript',
+            'TypeScript',
             'Storybook',
             'Cypress',
             'CSS3',
@@ -39,19 +39,19 @@ const StackProjectsSection = ({ className }: StackProjectsSectionProps) => {
         />
         <WorkExperienceBlock
           projectTranslationKey='Finanztip'
-          icons={['React', 'Typescript', 'Storybook', 'Jest']}
+          icons={['React', 'TypeScript', 'Storybook', 'Jest']}
         />
         <WorkExperienceBlock
           projectTranslationKey='Mentessa'
-          icons={['Vue.js', 'Typescript', 'Nest.js', 'Cypress', 'Storybook']}
+          icons={['Vue.js', 'TypeScript', 'Nest.js', 'Cypress', 'Storybook']}
         />
         <WorkExperienceBlock
           projectTranslationKey='Temedica'
-          icons={['React', 'Typescript', 'Cypress']}
+          icons={['React', 'TypeScript', 'Cypress']}
         />
         <WorkExperienceBlock
           projectTranslationKey='Feverguard'
-          icons={['Next', 'Typescript', 'Selenium']}
+          icons={['Next', 'TypeScript', 'Selenium']}
         />
       </div>
     </div>
