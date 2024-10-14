@@ -3,8 +3,10 @@ import StackSection from './StackSection';
 import { DialogTitle } from '@radix-ui/react-dialog';
 import TechSkillHorizontal from './TechSkillHorizontal';
 import GlowingButton from '@/components/ui/GlowingButton/glowing_button';
+import { useTranslations } from 'next-intl';
 
 const StackDialog = () => {
+  const t = useTranslations('SectionStackProjects');
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -17,7 +19,7 @@ const StackDialog = () => {
               />
               <TechSkillHorizontal
                 title='Typescript'
-                techIconName='Typescript'
+                techIconName='TypeScript'
               />
             </div>
             <div className='w-full flex flex-col gap-4'>
@@ -27,7 +29,7 @@ const StackDialog = () => {
           </div>
           <div className='flex justify-center'>
             <GlowingButton className='px-8 py-2 text-lg w-fit'>
-              SHOW FULL LIST
+              {t('buttonTitle')}
             </GlowingButton>
           </div>
         </div>
@@ -47,7 +49,7 @@ const StackDialog = () => {
               />
               <TechSkillHorizontal
                 title='Typescript'
-                techIconName='Typescript'
+                techIconName='TypeScript'
               />
               <TechSkillHorizontal title='CSS 3' techIconName='CSS3' />
               <TechSkillHorizontal title='HTML 5' techIconName='HTML5' />
@@ -65,7 +67,7 @@ const StackDialog = () => {
             </StackSection>
             <StackSection title='API'>
               <TechSkillHorizontal title='GraphQL' techIconName='GraphQL' />
-              <TechSkillHorizontal title='REST' techIconName='Typescript' />
+              <TechSkillHorizontal title='REST' techIconName='TypeScript' />
               <TechSkillHorizontal title='WebSocket' techIconName='WS' />
             </StackSection>
           </div>
@@ -93,16 +95,16 @@ const StackDialog = () => {
 
               <TechSkillHorizontal
                 title='React-Query'
-                techIconName='Typescript'
+                techIconName='TypeScript'
               />
             </StackSection>
 
             <StackSection title='Forms'>
-              <TechSkillHorizontal title='yup' techIconName='Typescript' />
+              <TechSkillHorizontal title='yup' techIconName='TypeScript' />
               <TechSkillHorizontal title='Zod' techIconName='Zod' />
               <TechSkillHorizontal
                 title='react-hook-form'
-                techIconName='Typescript'
+                techIconName='TypeScript'
               />
             </StackSection>
           </div>

@@ -1,5 +1,6 @@
 import SectionHeader from '@/components/ui/SectionHeader';
 import { Calendar } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 type EducationSectionProps = {
   className?: string;
@@ -8,8 +9,8 @@ type EducationSectionProps = {
 type DegreeChipProps = {
   university: string;
   degree: string;
-  yearStart: number;
-  yearEnd: number;
+  yearStart: string;
+  yearEnd: string;
 };
 
 const DegreeChip = ({
@@ -35,21 +36,22 @@ const DegreeChip = ({
 };
 
 const EductaionSection = ({ className }: EducationSectionProps) => {
+  const t = useTranslations('SectionEducation');
   return (
     <div className={className}>
       <div>
-        <SectionHeader title='EDUCATION' />
+        <SectionHeader title={t('title')} />
         <DegreeChip
-          university='University of Economics - Varna'
-          degree='Mobile and Web technologies'
-          yearStart={2019}
-          yearEnd={2023}
+          university={t('university1')}
+          degree={t('degree1')}
+          yearStart={t('startYear1')}
+          yearEnd={t('endYear1')}
         />
         <DegreeChip
-          university='Bauman Moscow Technical State'
-          degree='Automatic Information Systems'
-          yearStart={2017}
-          yearEnd={2019}
+          university={t('university2')}
+          degree={t('degree2')}
+          yearStart={t('startYear2')}
+          yearEnd={t('endYear2')}
         />
       </div>
     </div>

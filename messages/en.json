@@ -1,4 +1,87 @@
 {
   "titleFirstLine":"FRONTEND",
-  "titleSecondLine": "ENGINEER"
+  "titleSecondLine": "ENGINEER",
+  "SectionAboutMe": {
+    "title": "ABOUT ME",
+    "text": "I am an experienced frontend developer with seven years of valuable contributions to teams of varying sizes and scopes, emphasizing scalable and well-documented code. Deeply passionate about integrating creativity with technical expertise in the development world. Eagerly seeking to join a dynamic team working on a stimulating and meaningful project that offers both challenge and fulfillment."
+  },
+  "SectionStackProjects": {
+    "title1": "STACK",
+    "title2": "PROJECTS",
+    "subtitle1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "subtitle2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "buttonTitle": "SHOW FULL LIST",
+    "Projects": {
+      "FuturistLabs": {
+        "title": "Futurist-Labs",
+        "content": "Built an auctioning platform from the ground up with a focus on real-time dynamic features using WebSockets. The platform allowed seamless bid processing and offered a highly interactive user experience. Played a key role in delivering a scalable and robust solution for real-time transactions.",
+        "location": "Sofia, Bulgaria",
+        "yearStart": "2019",
+        "yearEnd": "2020"
+      },
+      "Regate": {
+        "title": "Regate",
+        "content": "Contributed to a financial accounting platform, taking part in both platform-wide development and the creation of internal tools. Introduced innovative features and improvements that optimized the workflow and enhanced the overall platform efficiency. Played a pivotal role in streamlining internal processes.",
+        "location": "Sofia, Bulgaria",
+        "yearStart": "2019",
+        "yearEnd": "2020"
+      },
+      "Finanztip": {
+        "title": "Finanztip",
+        "content": "Led a team and built the platform from scratch, implementing dynamic parsing and rendering of incoming data. The project required handling complex data flows and delivering a highly interactive interface for financial data visualization. Demonstrated leadership and problem-solving skills throughout the process.",
+        "location": "Sofia, Bulgaria",
+        "yearStart": "2019",
+        "yearEnd": "2020"
+      },
+      "Mentessa": {
+        "title": "Mentessa",
+        "content": "Developed frontend for a mentoring platform, focusing on clean code and usability. Ensured a smooth and intuitive user experience while adhering to frontend best practices. Contributed to the success of the platform by delivering reliable and maintainable code.",
+        "location": "Sofia, Bulgaria",
+        "yearStart": "2019",
+        "yearEnd": "2020"
+      },
+      "Temedica": {
+        "title": "Temedica",
+        "content": "Worked on a healthcare application, writing detailed documentation and ensuring compliance with strict healthcare regulations. Built an internal data visualization engine, enabling better analysis of healthcare data. Contributed significantly to maintaining code quality and adhering to industry standards.",
+        "location": "Sofia, Bulgaria",
+        "yearStart": "2019",
+        "yearEnd": "2020"
+      },
+      "Feverguard": {
+        "title": "Feverguard",
+        "content": "Developed an admin panel for an international startup focused on monitoring employee temperatures in real-time. The solution ensured scalability and system reliability, providing a robust backend management interface for administrators.",
+        "location": "Sofia, Bulgaria",
+        "yearStart": "2019",
+        "yearEnd": "2020"
+      },
+      "Comitex": {
+        "title": "Comitex",
+        "content": "Participated in standard frontend development, focusing on delivering responsive and user-friendly interfaces. Ensured cross-browser compatibility and delivered high-quality frontend code adhering to modern development practices.",
+        "location": "Sofia, Bulgaria",
+        "yearStart": "2019",
+        "yearEnd": "2020"
+      }
+    }
+  },
+  "SectionEducation": {
+    "title": "EDUCATION",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "university1": "University of Economics - Varna",
+    "university2": "Bauman Moscow Technical State",
+    "degree1": "Mobile and Web technologies",
+    "degree2": "Automatic Information Systems",
+    "startYear1": "2017",
+    "startYear2": "2019",
+    "endYear1": "2019",
+    "endYear2": "2022"
+  },
+  "SectionLanguages": {
+    "title": "LANGUAGES",
+    "language1": "ENGLISH",
+    "level1": "Fluent",
+    "language2": "BULGARIAN",
+    "level2": "Fluent",
+    "language3": "RUSSIAN",
+    "level3": "Native"
+  }
 }

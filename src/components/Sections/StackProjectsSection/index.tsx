@@ -3,58 +3,32 @@ import WorkExperienceBlock from '../../WorkHistory/WorkExperienceBlock';
 import EductaionSection from '../EducationSection';
 import LanguagesSection from '../LanguagesSection';
 import SectionHeader from '@/components/ui/SectionHeader';
+import { useTranslations } from 'next-intl';
 
 type StackProjectsSectionProps = {
   className?: string;
 };
 
 const StackProjectsSection = ({ className }: StackProjectsSectionProps) => {
+  const t = useTranslations('SectionStackProjects');
   return (
     <div
       className={`flex items-between gap-16 flex-wrap lg:flex-row flex-row-reverse lg:flex-nowrap ${className}`}>
       <div className='w-full'>
-        <SectionHeader title='STACK' />
+        <SectionHeader title={t('title1')} />
         <StackDialog />
         <EductaionSection className='mb-24 mt-24' />
         <LanguagesSection className='mb-8' />
       </div>
       <div className='w-full flex flex-col'>
-        <SectionHeader title='PROJECTS' />
-        <WorkExperienceBlock
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-          title='Futurist-Labs'
-          location='Sofia, Bulgaria'
-        />
-        <WorkExperienceBlock
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-          title='Regate'
-          location='Varna, Bulgaria'
-        />
-        <WorkExperienceBlock
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-          title='Finanztip'
-          location='Sofia, Bulgaria'
-        />
-        <WorkExperienceBlock
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-          title='Mentessa'
-          location='Sofia, Bulgaria'
-        />
-        <WorkExperienceBlock
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-          title='Temedica'
-          location='Sofia, Bulgaria'
-        />
-        <WorkExperienceBlock
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-          title='Feverguard'
-          location='Sofia, Bulgaria'
-        />
-        <WorkExperienceBlock
-          description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-          title='Comitex'
-          location='Sofia, Bulgaria'
-        />
+        <SectionHeader title={t('title2')} />
+        <WorkExperienceBlock projectTranslationKey='FuturistLabs' />
+        <WorkExperienceBlock projectTranslationKey='Regate' />
+        <WorkExperienceBlock projectTranslationKey='Finanztip' />
+        <WorkExperienceBlock projectTranslationKey='Mentessa' />
+        <WorkExperienceBlock projectTranslationKey='Temedica' />
+        <WorkExperienceBlock projectTranslationKey='Feverguard' />
+        <WorkExperienceBlock projectTranslationKey='Comitex' />
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import SectionHeader from '@/components/ui/SectionHeader';
+import { useTranslations } from 'next-intl';
 
 type LanguagesSectionProps = {
   className?: string;
@@ -20,13 +21,14 @@ const LanguageChip = ({
 };
 
 const LanguagesSection = ({ className }: LanguagesSectionProps) => {
+  const t = useTranslations('SectionLanguages');
   return (
     <div className={className}>
-      <SectionHeader title='LANGUAGES' />
+      <SectionHeader title={t('title')} />
       <div className='flex flex-row w-full gap-4  flex-wrap lg:flex-nowrap'>
-        <LanguageChip language='ENGLISH' level='Fluent' />
-        <LanguageChip language='BULGARIAN' level='Fluent' />
-        <LanguageChip language='RUSSIAN' level='Native' />
+        <LanguageChip language={t('language1')} level={t('level1')} />
+        <LanguageChip language={t('language2')} level={t('level2')} />
+        <LanguageChip language={t('language3')} level={t('level3')} />
       </div>
     </div>
   );

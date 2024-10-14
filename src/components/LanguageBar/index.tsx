@@ -1,23 +1,32 @@
+'use client';
+
+import { setUserLocale } from '@/lib/locale';
 import { Globe } from 'lucide-react';
-import Link from 'next/link';
+import { startTransition } from 'react';
 
 type LanguageBarProps = {
   className?: string;
 };
 const LanguageBar = ({ className }: LanguageBarProps) => {
+  const onChange = (value: string) => {
+    startTransition(() => {
+      setUserLocale(value);
+    });
+  };
+
   return (
     //Could have used cn, but will do for our use case
     <div className={`flex flex-row gap-2 text-xl ${className} absolute top-4`}>
       <Globe />
-      <Link href='/' className='hover:underline' locale='en'>
+      <button onClick={() => onChange('en')} className='hover:underline'>
         EN
-      </Link>
-      <Link href='/' className='hover:underline' locale='ru'>
+      </button>
+      <button onClick={() => onChange('ru')} className='hover:underline'>
         RU
-      </Link>
-      <Link href='/' className='hover:underline' locale='bg'>
+      </button>
+      <button onClick={() => onChange('bg')} className='hover:underline'>
         BG
-      </Link>
+      </button>
     </div>
   );
 };
