@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import LanguageBar from '../../LanguageBar';
+import Image from 'next/image';
 
 type TopSectionProps = {
   className?: string;
@@ -10,6 +11,7 @@ const TopSection = ({ className }: TopSectionProps) => {
   return (
     <div className={className}>
       <LanguageBar />
+      <Image src='assets/test.jpg' width={100} height={100} alt='123123' />
       <div className='font-bold text-3xl lg:text-7xl text-typography'>
         {t('titleFirstLine')}
       </div>
